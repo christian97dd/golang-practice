@@ -147,7 +147,8 @@ func main() {
 	}
 
 	fmt.Println("Productos:", productos)
-	fmt.Printf("Producto más caro: %s a %.2f€\n", productoMasCaro(productos))
+	nombre, precio := productoMasCaro(productos)
+	fmt.Printf("Producto más caro: %s a %.2f€\n", nombre, precio)
 
 	// Modificar map en función
 	aplicarDescuento(productos, 0.10) // 10% descuento

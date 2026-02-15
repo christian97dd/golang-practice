@@ -1,23 +1,35 @@
 # Aprendizaje de Go (Golang)
 
-Esta carpeta contiene ejemplos prácticos de Go para aprender el lenguaje paso a paso.
+Este repositorio contiene material de aprendizaje de Go organizado en carpetas.
+
+## 📁 Estructura del Proyecto
+
+```
+📦 go-aprendizaje/
+├── 📂 ejercicios/     # Ejercicios básicos numerados
+└── 📂 crud/           # Proyecto CRUD básico
+```
 
 ## Requisitos
 
 1. **Instalar Go**: Descarga desde [https://go.dev/dl/](https://go.dev/dl/)
 2. **Verificar instalación**: `go version`
 
-## Cómo ejecutar los ejemplos
+## 📚 Ejercicios Básicos
+
+La carpeta `ejercicios/` contiene 14 archivos para aprender Go paso a paso.
+
+### Cómo ejecutar los ejercicios
 
 ```bash
-# Para ejecutar cualquier archivo:
-go run nombre_archivo.go
+# Navega a la carpeta de ejercicios
+cd ejercicios
 
-# Por ejemplo:
+# Ejecuta cualquier archivo
 go run 01_hola_mundo.go
 ```
 
-## Orden recomendado de lectura
+### Orden recomendado de lectura
 
 1. **01_hola_mundo.go** - Estructura básica de un programa Go
 2. **02_variables_tipos.go** - Variables y tipos de datos
@@ -33,6 +45,26 @@ go run 01_hola_mundo.go
 12. **12_goroutines.go** - Concurrencia con goroutines
 13. **13_channels.go** - Comunicación entre goroutines
 14. **14_ejemplo_completo.go** - Aplicación práctica completa
+
+## 🚀 Proyecto CRUD
+
+La carpeta `crud/` contiene un proyecto práctico completo.
+
+### ¿Qué es?
+
+Un CRUD (Create, Read, Update, Delete) básico de productos que funciona en memoria. Perfecto para entender cómo estructurar una aplicación real en Go.
+
+### Cómo ejecutar el CRUD
+
+```bash
+# Navega a la carpeta crud
+cd crud
+
+# Ejecuta el programa
+go run main.go
+```
+
+Ver más detalles en [crud/README.md](crud/README.md)
 
 ## Características de Go
 

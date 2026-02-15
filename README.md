@@ -6,8 +6,9 @@ Este repositorio contiene material de aprendizaje de Go organizado en carpetas.
 
 ```
 📦 go-aprendizaje/
-├── 📂 ejercicios/     # Ejercicios básicos numerados
-└── 📂 crud/           # Proyecto CRUD básico
+├── 📂 ejercicios/     # Ejercicios básicos numerados (01-14)
+├── 📂 crud/           # CRUD básico con menú interactivo
+└── 📂 crud-api/       # CRUD API REST con Gin
 ```
 
 ## Requisitos
@@ -46,25 +47,43 @@ go run 01_hola_mundo.go
 13. **13_channels.go** - Comunicación entre goroutines
 14. **14_ejemplo_completo.go** - Aplicación práctica completa
 
-## 🚀 Proyecto CRUD
+## 🚀 Proyectos CRUD
 
-La carpeta `crud/` contiene un proyecto práctico completo.
+### 1. CRUD con Menú Interactivo (`crud/`)
 
-### ¿Qué es?
+CRUD básico de productos que funciona en memoria con menú en terminal.
 
-Un CRUD (Create, Read, Update, Delete) básico de productos que funciona en memoria. Perfecto para entender cómo estructurar una aplicación real en Go.
-
-### Cómo ejecutar el CRUD
-
+**Ejecutar:**
 ```bash
-# Navega a la carpeta crud
 cd crud
-
-# Ejecuta el programa
 go run main.go
 ```
 
-Ver más detalles en [crud/README.md](crud/README.md)
+📖 Ver más: [crud/README.md](crud/README.md)
+
+### 2. CRUD API REST con Gin (`crud-api/`)
+
+API REST completa para gestionar productos usando el framework Gin.
+
+**Ejecutar:**
+```bash
+cd crud-api
+go mod download  # Primera vez
+go run main.go
+```
+
+**Probar:**
+```bash
+# Crear un producto
+curl -X POST http://localhost:8080/productos \
+  -H "Content-Type: application/json" \
+  -d '{"nombre": "Laptop", "precio": 899.99}'
+
+# Listar productos
+curl http://localhost:8080/productos
+```
+
+📖 Ver más: [crud-api/README.md](crud-api/README.md)
 
 ## Características de Go
 

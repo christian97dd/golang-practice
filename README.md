@@ -6,9 +6,11 @@ Este repositorio contiene material de aprendizaje de Go organizado en carpetas.
 
 ```
 📦 go-aprendizaje/
-├── 📂 ejercicios/     # Ejercicios básicos numerados (01-14)
-├── 📂 crud/           # CRUD básico con menú interactivo
-└── 📂 crud-api/       # CRUD API REST con Gin
+├── 📂 ejercicios/        # Ejercicios teóricos numerados (01-14)
+├── 📂 ejercitación/      # Ejercicios prácticos propios
+├── 📂 crud/              # CRUD básico con menú interactivo
+├── 📂 crud-api/          # CRUD API REST con Gin
+└── 📂 guess-number-game/ # Juego de adivinar un número
 ```
 
 ## Requisitos
@@ -47,7 +49,25 @@ go run 01_hola_mundo.go
 13. **13_channels.go** - Comunicación entre goroutines
 14. **14_ejemplo_completo.go** - Aplicación práctica completa
 
-## 🚀 Proyectos CRUD
+## ✏️ Ejercitación
+
+La carpeta `ejercitación/` contiene ejercicios prácticos propios para reforzar lo aprendido.
+
+```bash
+cd ejercitación
+go run hola.go
+```
+
+| Archivo | Contenido |
+|---------|-----------|
+| `hola.go` | Variables, constantes, `iota` (días de la semana) |
+| `tipos-datos.go` | Tipos de datos, bytes, runes, conversión de tipos, input del usuario |
+| `ejercicio.go` | Ejercicio: hipotenusa, área y perímetro de un triángulo rectángulo con `math` |
+| `if-switch.go` | Condicionales `if/else` y `switch`, uso de `time` y `runtime` |
+| `for.go` | Bucle `for` con `continue` |
+| `funciones.go` | Funciones, múltiples retornos, named returns |
+
+## 🎮 Proyectos
 
 ### 1. CRUD con Menú Interactivo (`crud/`)
 
@@ -84,6 +104,22 @@ curl http://localhost:8080/productos
 ```
 
 📖 Ver más: [crud-api/README.md](crud-api/README.md)
+
+### 3. Juego: Adivina el Número (`guess-number-game/`)
+
+Juego interactivo en terminal para adivinar un número aleatorio entre 0 y 99.
+
+**Ejecutar:**
+```bash
+cd guess-number-game
+go run main.go
+```
+
+- 10 intentos máximos
+- Pistas de "mayor" o "menor" en cada intento
+- Opción de jugar de nuevo al terminar
+
+📖 Ver más: [guess-number-game/README.md](guess-number-game/README.md)
 
 ## Características de Go
 

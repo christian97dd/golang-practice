@@ -10,7 +10,8 @@ Este repositorio contiene material de aprendizaje de Go organizado en carpetas.
 ├── 📂 ejercitación/      # Ejercicios prácticos propios
 ├── 📂 crud/              # CRUD básico con menú interactivo
 ├── 📂 crud-api/          # CRUD API REST con Gin
-└── 📂 guess-number-game/ # Juego de adivinar un número
+├── 📂 guess-number-game/ # Juego de adivinar un número
+└── 📂 todo-list/         # Lista de tareas con CRUD en terminal
 ```
 
 ## Requisitos
@@ -66,6 +67,10 @@ go run hola.go
 | `if-switch.go` | Condicionales `if/else` y `switch`, uso de `time` y `runtime` |
 | `for.go` | Bucle `for` con `continue` |
 | `funciones.go` | Funciones, múltiples retornos, named returns |
+| `matrices.go` | Arrays, matrices 2D, slices: `append`, `copy`, eliminación por índice, `make` |
+| `mapas.go` | Mapas: creación, acceso, patrón `ok`, `delete`, iteración con `range` |
+| `estructuras.go` | Structs: declaración, inicialización con campos nombrados y posicional |
+| `punteros.go` | Punteros, referencias con `&` y `*`, métodos con receptor puntero |
 
 ## 🎮 Proyectos
 
@@ -120,6 +125,23 @@ go run main.go
 - Opción de jugar de nuevo al terminar
 
 📖 Ver más: [guess-number-game/README.md](guess-number-game/README.md)
+
+### 4. Lista de Tareas (`todo-list/`)
+
+CRUD de tareas interactivo en terminal. Permite agregar, completar, editar y eliminar tareas usando structs y métodos.
+
+**Ejecutar:**
+```bash
+cd todo-list
+go run main.go
+```
+
+- Agregar tareas con nombre y descripción
+- Marcar tareas como completadas
+- Editar y eliminar tareas por índice
+- Lista las tareas después de cada operación
+
+📖 Ver más: [todo-list/README.md](todo-list/README.md)
 
 ## Características de Go
 
